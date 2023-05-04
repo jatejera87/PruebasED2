@@ -14,7 +14,7 @@ class TestMain {
 
 	@Test
 	public void testSuma1(){
-		int resultado = Main.suma(5,2);
+		int resultado = Main.suma(5,8);
 		assertEquals(resultado, 7);
 	}
 
@@ -24,5 +24,10 @@ class TestMain {
 		Main.main(args);
 	}
 
+	@Test
+	public void testMain2() throws Exception {
+		String[] args = {"8","4","-"};
+		Main.main(args);
+	}
 
 }
